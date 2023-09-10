@@ -1,14 +1,22 @@
-import Card from 'react-bootstrap/Card';
-import Container from 'react-bootstrap/Container';
-import ListGroup from 'react-bootstrap/ListGroup';
+import Card from 'react-bootstrap/Card'
+import Container from 'react-bootstrap/Container'
+import ListGroup from 'react-bootstrap/ListGroup'
+
 
 export default function Packages(props) {
     const displayPackages = props.packages.map((eachPackage) => 
-        <ListGroup.Item key={eachPackage.id}>{eachPackage.name}</ListGroup.Item>
-    );
+        <ListGroup.Item>{eachPackage}</ListGroup.Item>)
 
     return (
         <div className="packages">
+            {/* <div className="packages">
+                <div className="packagesHeader">
+                    <h1>Our Packages</h1>
+                </div>
+                <ul>
+                    {displayPackages}
+                </ul>
+            </div> */}
             <Container>
                 <Card>
                     <Card.Body>
@@ -23,5 +31,5 @@ export default function Packages(props) {
                 </Card>
             </Container>
         </div>
-    );
+    )
 }
