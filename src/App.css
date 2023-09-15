@@ -43,3 +43,36 @@ li:hover {
 .packages {
   margin-top: 50px;
 }
+
+/* Global styles */
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Jumbotron styles */
+
+.jumbotron {
+  background-color: #d1d0d7;
+  padding: 30px;
+  text-align: center; 
+}
+
+/* Heading styles */
+
+.jumbotron h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+} 
+
+.jumbotron .red {
+  color: red;
+}
+
+.jumbotron .blue {
+  color: blue; 
+}
+
+.jumbotron .green {
+  color: green;
+}
